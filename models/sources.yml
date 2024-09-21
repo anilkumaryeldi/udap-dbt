@@ -1,0 +1,18 @@
+version: 2
+
+sources:
+    - name: raw_data
+      description: This is a replica of the redshift database used by our app
+      database: dev
+      schema: public
+      tables:
+          - name: loan_payments
+            description: One record per loan.
+          - name: customer_info
+            description: One record per customer.
+          - name: loan_emis
+            description: One record per loan.
+          - name: customer_satisfaction
+            description: One record per customer.
+          - name: loan_details
+            description: One record per loan.
